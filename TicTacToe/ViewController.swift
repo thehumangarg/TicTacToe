@@ -113,7 +113,7 @@ class ViewController: UIViewController {
     }
     
     func resultAlert(title: String) {
-        let message = "\nNoughts " + String(noughtsScore) + "\n\nCrosses " + String(crossScore)
+        _ = "\nNoughts " + String(noughtsScore) + "\n\nCrosses " + String(crossScore)
         let ac = UIAlertController(title: title, message: nil, preferredStyle: .actionSheet)
         ac.addAction(UIAlertAction(title: "reset", style: .default, handler: {(_) in
             self.resetBoard()
